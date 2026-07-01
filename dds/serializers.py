@@ -12,14 +12,18 @@ class TransactionTypeSerializer(serializers.ModelSerializer):
         fields = ("id", "name")
 
 class CategorySerializer(serializers.ModelSerializer):
+    transaction_type_name = serializers.CharField(source='transaction_type.name', read_only=True)
+
     class Meta:
         model = Category
-        fields = ("id", "name", "transaction_type")
+        fields = ('id', 'name', 'transaction_type', 'transaction_type_name')
 
 class SubcategorySerializer(serializers.ModelSerializer):
+    category_name = serializers.CharField(source='category.name', read_only=True)
+
     class Meta:
         model = Subcategory
-        fields = ("id", "name", "category")
+        fields = ('id', 'name', 'category', 'category_name')
 
 class CashFlowRecordSerializer(serializers.ModelSerializer):
     # Дополнительные поля только для чтения, чтобы в ответе API

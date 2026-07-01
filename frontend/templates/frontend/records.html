@@ -1,0 +1,81 @@
+{% extends "frontend/base.html" %}
+
+{% block title %}Записи ДДС{% endblock %}
+
+{% block content %}
+<div class="d-flex justify-content-between align-items-center mb-3">
+    <h4 class="mb-0">Записи ДДС</h4>
+    <a href="/records/create/" class="btn btn-success">+ Добавить запись</a>
+</div>
+
+<!-- Фильтры -->
+<div class="card mb-4">
+    <div class="card-body">
+        <div class="row g-2">
+            <div class="col-md-2">
+                <label class="form-label">Дата с</label>
+                <input type="date" id="filter-date-from" class="form-control">
+            </div>
+            <div class="col-md-2">
+                <label class="form-label">Дата по</label>
+                <input type="date" id="filter-date-to" class="form-control">
+            </div>
+            <div class="col-md-2">
+                <label class="form-label">Статус</label>
+                <select id="filter-status" class="form-select">
+                    <option value="">Все</option>
+                </select>
+            </div>
+            <div class="col-md-2">
+                <label class="form-label">Тип</label>
+                <select id="filter-type" class="form-select">
+                    <option value="">Все</option>
+                </select>
+            </div>
+            <div class="col-md-2">
+                <label class="form-label">Категория</label>
+                <select id="filter-category" class="form-select">
+                    <option value="">Все</option>
+                </select>
+            </div>
+            <div class="col-md-2">
+                <label class="form-label">Подкатегория</label>
+                <select id="filter-subcategory" class="form-select">
+                    <option value="">Все</option>
+                </select>
+            </div>
+        </div>
+        <div class="mt-2">
+            <button id="btn-apply-filters" class="btn btn-primary btn-sm">Применить</button>
+            <button id="btn-reset-filters" class="btn btn-secondary btn-sm">Сбросить</button>
+        </div>
+    </div>
+</div>
+
+<!-- Таблица -->
+<div class="table-responsive">
+    <table class="table table-bordered table-hover">
+        <thead>
+            <tr>
+                <th>Дата</th>
+                <th>Статус</th>
+                <th>Тип</th>
+                <th>Категория</th>
+                <th>Подкатегория</th>
+                <th>Сумма</th>
+                <th>Комментарий</th>
+                <th>Действия</th>
+            </tr>
+        </thead>
+        <tbody id="records-table-body">
+            <tr>
+                <td colspan="8" class="text-center text-muted">Загрузка...</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+{% endblock %}
+
+{% block scripts %}
+<script src="/static/frontend/js/records.js"></script>
+{% endblock %}

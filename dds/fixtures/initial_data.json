@@ -1,0 +1,85 @@
+[
+{
+  "model": "dds.status",
+  "pk": 1,
+  "fields": {
+    "name": "Бизнес"
+  }
+},
+{
+  "model": "dds.status",
+  "pk": 2,
+  "fields": {
+    "name": "Личное"
+  }
+},
+{
+  "model": "dds.status",
+  "pk": 3,
+  "fields": {
+    "name": "Налог"
+  }
+},
+{
+  "model": "dds.transactiontype",
+  "pk": 1,
+  "fields": {
+    "name": "Пополнение"
+  }
+},
+{
+  "model": "dds.transactiontype",
+  "pk": 2,
+  "fields": {
+    "name": "Списание"
+  }
+},
+{
+  "model": "dds.category",
+  "pk": 1,
+  "fields": {
+    "name": "Маркетинг",
+    "transaction_type": 2
+  }
+},
+{
+  "model": "dds.category",
+  "pk": 2,
+  "fields": {
+    "name": "Инфраструктура",
+    "transaction_type": 2
+  }
+},
+{
+  "model": "dds.subcategory",
+  "pk": 1,
+  "fields": {
+    "name": "Farpost",
+    "category": 1
+  }
+},
+{
+  "model": "dds.subcategory",
+  "pk": 2,
+  "fields": {
+    "name": "Avito",
+    "category": 1
+  }
+},
+{
+  "model": "dds.subcategory",
+  "pk": 3,
+  "fields": {
+    "name": "VPS",
+    "category": 2
+  }
+},
+{
+  "model": "dds.subcategory",
+  "pk": 4,
+  "fields": {
+    "name": "Proxy",
+    "category": 2
+  }
+}
+]

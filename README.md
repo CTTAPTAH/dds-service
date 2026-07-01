@@ -47,15 +47,23 @@ cd dds-service
 python -m venv .venv
 ```
 
-Windows:
+Windows (PowerShell):
 ```bash
 .venv\Scripts\activate
+```
+
+Windows (cmd):
+```bash
+.venv\Scripts\activate.bat
 ```
 
 Linux/macOS:
 ```bash
 source .venv/bin/activate
 ```
+
+> Если PowerShell выдаёт ошибку про политику выполнения скриптов, выполните:
+> `Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope CurrentUser`
 
 ### 3. Установить зависимости
 

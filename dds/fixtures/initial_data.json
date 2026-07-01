@@ -3,42 +3,42 @@
   "model": "dds.status",
   "pk": 1,
   "fields": {
-    "name": "Бизнес"
+    "name": "Р‘РёР·РЅРµСЃ"
   }
 },
 {
   "model": "dds.status",
   "pk": 2,
   "fields": {
-    "name": "Личное"
+    "name": "Р›РёС‡РЅРѕРµ"
   }
 },
 {
   "model": "dds.status",
   "pk": 3,
   "fields": {
-    "name": "Налог"
+    "name": "РќР°Р»РѕРі"
   }
 },
 {
   "model": "dds.transactiontype",
   "pk": 1,
   "fields": {
-    "name": "Пополнение"
+    "name": "РџРѕРїРѕР»РЅРµРЅРёРµ"
   }
 },
 {
   "model": "dds.transactiontype",
   "pk": 2,
   "fields": {
-    "name": "Списание"
+    "name": "РЎРїРёСЃР°РЅРёРµ"
   }
 },
 {
   "model": "dds.category",
   "pk": 1,
   "fields": {
-    "name": "Маркетинг",
+    "name": "РњР°СЂРєРµС‚РёРЅРі",
     "transaction_type": 2
   }
 },
@@ -46,7 +46,7 @@
   "model": "dds.category",
   "pk": 2,
   "fields": {
-    "name": "Инфраструктура",
+    "name": "РРЅС„СЂР°СЃС‚СЂСѓРєС‚СѓСЂР°",
     "transaction_type": 2
   }
 },

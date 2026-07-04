@@ -3,6 +3,10 @@
 Веб-приложение для учёта поступлений и списаний денежных средств.
 Позволяет вести записи по категориям, фильтровать их и управлять справочниками.
 
+## Демо
+
+[https://dds-service-production.up.railway.app](https://dds-service-production.up.railway.app)
+
 ## Стек
 
 - **Backend**: Python 3.13, Django 6, Django REST Framework
